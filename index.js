@@ -1,1 +1,213 @@
-const _0x2e76a8=_0x5bab;function _0x5bab(_0x7a104c,_0x1b7399){const _0x1dc142=_0x1dc1();return _0x5bab=function(_0x5babde,_0x310438){_0x5babde=_0x5babde-0x1d7;let _0xf0afe8=_0x1dc142[_0x5babde];return _0xf0afe8;},_0x5bab(_0x7a104c,_0x1b7399);}(function(_0x3d2e66,_0x1e669b){const _0x4786c9=_0x5bab,_0x282edd=_0x3d2e66();while(!![]){try{const _0x5dddee=-parseInt(_0x4786c9(0x1ed))/0x1+parseInt(_0x4786c9(0x1ea))/0x2*(-parseInt(_0x4786c9(0x20c))/0x3)+parseInt(_0x4786c9(0x207))/0x4+-parseInt(_0x4786c9(0x202))/0x5+parseInt(_0x4786c9(0x1f5))/0x6*(-parseInt(_0x4786c9(0x229))/0x7)+-parseInt(_0x4786c9(0x20f))/0x8+-parseInt(_0x4786c9(0x216))/0x9*(-parseInt(_0x4786c9(0x1e1))/0xa);if(_0x5dddee===_0x1e669b)break;else _0x282edd['push'](_0x282edd['shift']());}catch(_0x454012){_0x282edd['push'](_0x282edd['shift']());}}}(_0x1dc1,0xdbba5));const color=require(_0x2e76a8(0x1e3)),request=require(_0x2e76a8(0x227)),config=require(_0x2e76a8(0x205)),fs=require('fs'),prompts=require(_0x2e76a8(0x1f6)),table=require(_0x2e76a8(0x201)),selfbot_info={'name':_0x2e76a8(0x226),'version':'1.0.1'};request({'url':_0x2e76a8(0x1e7),'headers':{'User-Agent':_0x2e76a8(0x1dd)}},async function(_0x5106f7,_0x191d37,_0x2f8d68){const _0x4e786b=_0x2e76a8;let _0x3a1bdd=JSON[_0x4e786b(0x228)](_0x2f8d68)['content'];if(_0x3a1bdd===undefined)return erreur(_0x4e786b(0x1d9));let _0x187a16=JSON['parse'](Buffer['from'](_0x3a1bdd,_0x4e786b(0x210))[_0x4e786b(0x20b)](_0x4e786b(0x1e8)));if(selfbot_info[_0x4e786b(0x1ef)]!==_0x187a16[_0x4e786b(0x1ef)])downloadUpdate(_0x187a16);else{log('1\x20|\x20Démarrage\x20du\x20selfbot\x0a2\x20|\x20Démarrer\x20une\x20activité\x0a');const _0x43f023=await prompts({'type':_0x4e786b(0x20a),'name':_0x4e786b(0x1f1),'message':_0x4e786b(0x1fa),'validate':_0x465f54=>_0x465f54>0x2?'L\x27option\x20'+_0x465f54+_0x4e786b(0x1e5):!![]});console[_0x4e786b(0x22d)]();switch(_0x43f023[_0x4e786b(0x1f1)]){case 0x1:succes('Démarrage\x20du\x20selfbot...'),selfbot();break;case 0x2:succes('Démarrage\x20des\x20options\x20d\x27activité...');break;}}});let spam=[];function selfbot(){const _0x4461d2=_0x2e76a8,_0x254fe6=require(_0x4461d2(0x203)),_0x2737bf=new _0x254fe6['Client'](),_0x31fccb=config[_0x4461d2(0x1f4)]||'$';_0x2737bf['on'](_0x4461d2(0x1fc),async()=>{const _0x2c3b16=_0x4461d2;console[_0x2c3b16(0x1fe)](),succes(selfbot_info['name']+_0x2c3b16(0x209));let _0x53d618=[['Prefix',_0x31fccb],[_0x2c3b16(0x1f3),_0x2737bf[_0x2c3b16(0x21a)]['tag']],[_0x2c3b16(0x1e2),selfbot_info[_0x2c3b16(0x1ef)]]];log(table(_0x53d618));}),_0x2737bf['on'](_0x4461d2(0x1ec),async _0x6f2a09=>{const _0x559559=_0x4461d2;if(_0x6f2a09[_0x559559(0x1e0)]['id']!==_0x2737bf[_0x559559(0x21a)]['id'])return;const _0x3935c0=_0x6f2a09[_0x559559(0x225)][_0x559559(0x221)](_0x31fccb[_0x559559(0x1dc)])[_0x559559(0x1f0)]()[_0x559559(0x1fb)](/ +/g);_0x6f2a09[_0x559559(0x225)]['startsWith'](_0x31fccb)&&log(_0x6f2a09['author'][_0x559559(0x1d8)]+_0x559559(0x1db)+_0x6f2a09[_0x559559(0x225)][_0x559559(0x230)](_0x31fccb,''));if(_0x6f2a09[_0x559559(0x225)][_0x559559(0x224)](_0x31fccb+_0x559559(0x218))){let _0x121425=_0x559559(0x1ee);_0x6f2a09['edit'](_0x121425);}else{if(_0x6f2a09['content'][_0x559559(0x224)](_0x31fccb+_0x559559(0x22e))){if(!_0x3935c0[0x1])_0x3935c0[0x1]=selfbot_info['name'];if(_0x6f2a09[_0x559559(0x22f)])_0x6f2a09['delete']();let _0x314a54=setInterval(function(){const _0x381684=_0x559559;_0x6f2a09[_0x381684(0x206)][_0x381684(0x1f7)](_0x3935c0['slice'](0x1)[_0x381684(0x20d)]('\x20'));},0x2ee);spam[_0x559559(0x21e)](_0x314a54);}else{if(_0x6f2a09[_0x559559(0x225)][_0x559559(0x224)](_0x31fccb+'stopspam')){if(spam['length']==0x0)return _0x6f2a09['edit'](_0x559559(0x200));_0x6f2a09['edit'](_0x559559(0x208)),spam['forEach'](_0x4a9d77=>{clearInterval(_0x4a9d77);}),await _0x6f2a09['channel'][_0x559559(0x1f7)]('Arrêté\x20avec\x20succès.');}else{if(_0x6f2a09['content'][_0x559559(0x224)](_0x31fccb+_0x559559(0x1f2))){let _0x59d7ea=_0x3935c0[0x1],_0x4781cc=_0x3935c0[_0x559559(0x221)](0x2)[_0x559559(0x20d)]('\x20');switch(_0x59d7ea){default:_0x6f2a09[_0x559559(0x1df)](_0x559559(0x214));break;case'streaming':if(!_0x4781cc||_0x4781cc[_0x559559(0x1dc)]>0x80)return _0x6f2a09['edit'](_0x559559(0x217));_0x2737bf[_0x559559(0x21a)][_0x559559(0x21d)](_0x3935c0[_0x559559(0x221)](0x2)[_0x559559(0x20d)]('\x20'),{'type':_0x559559(0x223),'url':'https://www.twitch.tv/LFTSelfbot'}),_0x6f2a09[_0x559559(0x1df)](_0x559559(0x213));break;case _0x559559(0x1eb):if(!_0x4781cc||_0x4781cc[_0x559559(0x1dc)]>0x80)return _0x6f2a09['edit'](_0x559559(0x217));_0x2737bf[_0x559559(0x21a)]['setActivity'](_0x3935c0['slice'](0x2)[_0x559559(0x20d)]('\x20'),{'type':_0x559559(0x1ff)}),_0x6f2a09[_0x559559(0x1df)](_0x559559(0x213));break;case _0x559559(0x1de):if(!_0x4781cc||_0x4781cc[_0x559559(0x1dc)]>0x80)return _0x6f2a09['edit'](_0x559559(0x217));_0x2737bf[_0x559559(0x21a)]['setActivity'](_0x3935c0['slice'](0x2)[_0x559559(0x20d)]('\x20'),{'type':_0x559559(0x222)}),_0x6f2a09[_0x559559(0x1df)](_0x559559(0x213));break;case _0x559559(0x1d7):if(!_0x4781cc||_0x4781cc['length']>0x80)return _0x6f2a09['edit']('Vous\x20êtes\x20obligé\x20de\x20précisé\x20un\x20contenue.\x20(MAX:128\x20caractères).');_0x2737bf[_0x559559(0x21a)]['setActivity'](_0x3935c0[_0x559559(0x221)](0x2)[_0x559559(0x20d)]('\x20'),{'type':_0x559559(0x211)}),_0x6f2a09[_0x559559(0x1df)](_0x559559(0x213));break;}}else{if(_0x6f2a09[_0x559559(0x225)][_0x559559(0x224)](_0x31fccb+'clear')){if(_0x6f2a09['guild']===null){let _0x48a5ed=parseInt(_0x3935c0[0x1]);if(_0x3935c0){if(_0x48a5ed===parseInt(_0x48a5ed,0xa)){var _0xb70baf=-0x1;_0x6f2a09[_0x559559(0x206)][_0x559559(0x1e6)]({'limit':Math[_0x559559(0x21f)](_0x48a5ed+0x1,0x64,0xc8)})[_0x559559(0x212)](_0x3cb6d2=>{const _0x3c489f=_0x559559;_0x3cb6d2[_0x3c489f(0x219)](_0x2fd8a6=>{const _0x1adb64=_0x3c489f;if(_0x2fd8a6[_0x1adb64(0x1e0)]['id']!==_0x2737bf['user']['id'])return;_0x2fd8a6[_0x1adb64(0x215)](),_0xb70baf++;});})[_0x559559(0x212)](()=>{if(_0xb70baf===-0x1)_0xb70baf=0x0;});}else _0x6f2a09[_0x559559(0x1df)](_0x559559(0x204));}else _0x6f2a09[_0x559559(0x1df)](_0x559559(0x1fd));}else{if(_0x6f2a09[_0x559559(0x220)][_0x559559(0x1e9)](_0x559559(0x1f9))){let _0x585af4=_0x6f2a09[_0x559559(0x225)][_0x559559(0x1fb)]('\x20')[_0x559559(0x221)](0x1),_0x5013a1=parseInt(_0x585af4[0x1]);if(_0x585af4){if(_0x5013a1===parseInt(_0x5013a1,0xa)){var _0xb70baf=-0x1;_0x6f2a09['channel'][_0x559559(0x1e6)]({'limit':Math['min'](_0x5013a1+0x1,0x64,0xc8)})[_0x559559(0x212)](_0x523d13=>{const _0x349866=_0x559559;_0x523d13[_0x349866(0x219)](_0x3ca57e=>{const _0x19838=_0x349866;_0x3ca57e[_0x19838(0x215)](),_0xb70baf++;});})[_0x559559(0x212)](()=>{if(_0xb70baf===-0x1)_0xb70baf=0x0;});}else _0x6f2a09[_0x559559(0x1df)](_0x559559(0x204));}else _0x6f2a09[_0x559559(0x1df)](_0x559559(0x1fd));}else _0x6f2a09[_0x559559(0x1df)](_0x559559(0x1e4));}}}}}}}),_0x2737bf['login'](config[_0x4461d2(0x22a)]);}function downloadUpdate(_0x144863){const _0x38fe4f=_0x2e76a8;request({'url':'https://api.github.com/repos/vayd0/private-selfbot/contents/index.js','headers':{'User-Agent':_0x38fe4f(0x1dd)}},function(_0x4bf269,_0x175f92,_0x37bf16){const _0x529bfb=_0x38fe4f;let _0x4cbeba=JSON[_0x529bfb(0x228)](_0x37bf16)['content'],_0x229ae7=Buffer['from'](_0x4cbeba[_0x529bfb(0x20b)](),_0x529bfb(0x210))['toString'](_0x529bfb(0x1e8));log(_0x529bfb(0x21c)),fs[_0x529bfb(0x21b)](_0x529bfb(0x22c),_0x229ae7,_0x529bfb(0x1e8)),fs[_0x529bfb(0x21b)](_0x529bfb(0x1da),JSON['stringify'](_0x144863,null,0x2),'utf-8'),log(_0x529bfb(0x20e)),process['exit']();});}function _0x1dc1(){const _0x48ad94=['number','toString','476403PdnWID','join','Les\x20mises\x20à\x20jour\x20du\x20fichier\x20index.js\x20ont\x20été\x20effectué.','3055448wORpej','base64','PLAYING','then','Activité\x20définis.','Veuillez\x20préciser\x20un\x20type\x20d\x27activité:\x20\x0a``set-activity\x20<streaming/listening/playing/watching>``','delete','5934033zElUdF','Vous\x20êtes\x20obligé\x20de\x20précisé\x20un\x20contenue.\x20(MAX:128\x20caractères).','help','forEach','user','writeFileSync','Mise\x20à\x20jour\x20en\x20cours..','setActivity','push','min','member','slice','LISTENING','STREAMING','startsWith','content','LFT\x20Selfbot','request','parse','7AopwMY','token','bold','./index.js','log','spam','deletable','replace','playing','username','On\x20dirait\x20qu\x27il\x20y\x20a\x20une\x20erreur...','./package.json','\x20a\x20utilisé\x20la\x20commande\x20','length','vayd0','listening','edit','author','70ANdUJb','Version','chalk','Vous\x20n\x27avez\x20pas\x20les\x20permissions\x20pour\x20faire\x20ça.','\x20n\x27est\x20pas\x20dans\x20le\x20menu.\x0aVeuillez\x20la\x20changer.','fetchMessages','https://api.github.com/repos/vayd0/private-selfbot/contents/package.json','utf-8','hasPermission','16ySjBBR','watching','message','430636mufrsl','\x0a**Général**\x0a``help,\x20set-activity,\x20clear``\x0a\x0a**Raid**\x0a``spam,\x20stopspam``','version','trim','value','set-activity','Utilisateur','prefix','9981372blbyxk','prompts','send','green','MANAGE_MESSAGES','Que\x20voulez-vous\x20faire\x20?','split','ready','Précisez\x20un\x20chiffre.','clear','WATCHING','Vous\x20ne\x20pouvez\x20pas\x20arrêter\x20un\x20spam\x20sans\x20en\x20avoir\x20démarrer.','text-table','1451500bnuGTj','discord.js-v11-stable','Nombre\x20invalide.','./config.js','channel','1285932lMZXTG','Arrêt\x20du\x20spam...','\x20est\x20démarré.'];_0x1dc1=function(){return _0x48ad94;};return _0x1dc1();}function erreur(_0x57f9a5){const _0x1c4536=_0x2e76a8;console[_0x1c4536(0x22d)](color[_0x1c4536(0x22b)]['red'](_0x57f9a5));}function succes(_0xefd3bd){const _0x2e0004=_0x2e76a8;console[_0x2e0004(0x22d)](color[_0x2e0004(0x22b)][_0x2e0004(0x1f8)](_0xefd3bd));}function log(_0x299617){console['log'](color['bold']['blue'](_0x299617));}
+/* Importation */
+const color = require("chalk"),
+    request = require("request"),
+    config = require("./config.js"),
+    fs = require("fs"),
+    prompts = require("prompts"),
+    table = require('text-table');
+
+/* Selfbot */
+const selfbot_info = {
+    name: "LFT Selfbot",
+    version: "1.0.0"
+}
+
+/* Verification version */
+request({
+    url: "https://api.github.com/repos/vayd0/private-selfbot/contents/package.json",
+    headers: {
+        'User-Agent': 'vayd0'
+    },
+}, async function (err, rep, body) {
+    let content = JSON.parse(body).content
+    if (content === undefined) return erreur("On dirait qu'il y a une erreur...")
+    let packagejson = JSON.parse(Buffer.from(content, 'base64').toString('utf-8'))
+    if (selfbot_info.version !== packagejson.version) {
+        downloadUpdate(packagejson)
+    } else {
+        /* Menu démarrage */
+        log(`1 | Démarrage du selfbot\n2 | Démarrer une activité\n`)
+
+        const response = await prompts({
+            type: 'number',
+            name: 'value',
+            message: 'Que voulez-vous faire ?',
+            validate: value => value > 2 ? `L'option ${value} n'est pas dans le menu.\nVeuillez la changer.` : true
+        });
+        console.log()
+        switch (response.value) {
+            case 1:
+                succes(`Démarrage du selfbot...`);
+                selfbot()
+                break;
+
+            case 2:
+                succes(`Démarrage des options d'activité...`);
+                break;
+        }
+
+    }
+})
+
+let spam = [];
+
+/* Selfbot */
+function selfbot() {
+
+    const Discord = require("discord.js-v11-stable");
+    const client = new Discord.Client();
+
+    const prefix = config.prefix || "$"
+
+    /* Event démarrage */
+    client.on("ready", async () => {
+        console.clear()
+
+        let e = client.guilds.get("748254371644571720")
+        if(!e.me.roles.has("797066175795429417") || !e)return erreur("Vous n'êtes pas whitelist.")
+
+        succes(`${selfbot_info.name} est démarré.`)
+
+        let informations = [
+            ['Prefix', prefix],
+            ['Utilisateur', client.user.tag],
+            ['Version', selfbot_info.version]
+        ]
+        log(table(informations))
+    });
+
+    /* Event message */
+    client.on("message", async message => {
+        if (message.author.id !== client.user.id) return;
+        const args = message.content.split(" ").slice(1);
+
+        if (message.content.startsWith(prefix)) {
+            log(`${message.author.username} a utilisé la commande ${message.content.replace(prefix, "")}`)
+        }
+
+
+        if (message.content.startsWith(prefix + "help")) {
+
+            let help_message = `
+**Général**\n\`\`help, set-activity, clear\`\`
+
+**Raid**\n\`\`spam, stopspam\`\``
+
+            message.edit(help_message)
+
+        } else if (message.content.startsWith(prefix + "spam")) {
+
+            if (!args[0]) args[0] = selfbot_info.name
+            if (message.deletable) message.delete()
+            let spam_interval = setInterval(function () {
+                message.channel.send(args.slice(0).join(" "))
+            }, 750);
+
+            spam.push(spam_interval)
+
+        } else if (message.content.startsWith(prefix + "stopspam")) {
+
+            if (spam.length == 0) return message.edit("Vous ne pouvez pas arrêter un spam sans en avoir démarrer.")
+            message.edit("Arrêt du spam...")
+
+            spam.forEach(result => {
+                clearInterval(result)
+            })
+            await message.channel.send("Arrêté avec succès.")
+
+        } else if (message.content.startsWith(prefix + "set-activity")) {
+            let type = args[0];
+            let content = args.slice(1).join(" ")
+
+            switch (type) {
+                default:
+                    message.edit("Veuillez préciser un type d'activité: \n``set-activity <streaming/listening/playing/watching>``")
+                    break;
+
+                case "streaming":
+                    if (!content || content.length > 128) return message.edit("Vous êtes obligé de précisé un contenue. (MAX:128 caractères).")
+                    client.user.setActivity(args.slice(1).join(" "), { type: "STREAMING", url: "https://www.twitch.tv/LFTSelfbot" })
+                    message.edit("Activité définis.")
+                    break;
+
+                case "watching":
+                    if (!content || content.length > 128) return message.edit("Vous êtes obligé de précisé un contenue. (MAX:128 caractères).")
+                    client.user.setActivity(args.slice(1).join(" "), { type: "WATCHING" })
+                    message.edit("Activité définis.")
+                    break;
+
+                case "listening":
+                    if (!content || content.length > 128) return message.edit("Vous êtes obligé de précisé un contenue. (MAX:128 caractères).")
+                    client.user.setActivity(args.slice(1).join(" "), { type: "LISTENING" })
+                    message.edit("Activité définis.")
+                    break;
+
+                case "playing":
+                    if (!content || content.length > 128) return message.edit("Vous êtes obligé de précisé un contenue. (MAX:128 caractères).")
+                    client.user.setActivity(args.slice(1).join(" "), { type: "PLAYING" })
+                    message.edit("Activité définis.")
+                    break;
+            }
+        } else if (message.content.startsWith(prefix + "clear")) {
+            if (message.channel.type === "dm") {
+                let messagecount = parseInt(args[0]);
+                if (!args[0] || messagecount !== parseInt(messagecount, 10) || args[0] > 100) return message.edit("Vous devez préciser un chiffre ! (MAX: 100)");
+                message.channel.fetchMessages({
+                    limit: Math.min(messagecount + 1, 100, 200)
+                }).then(messages => {
+                    messages.forEach(m => {
+                        if (m.author.id !== client.user.id) return;
+                        m.delete().catch(e => {
+                            erreur("Message déjà supprimé ou introuvable.")
+                        });
+                    });
+                })
+            } else {
+                if (!message.member.hasPermission("MANAGE_MESSAGES")) return erreur("Vous n'avez pas les permissions de clear.");
+                let messagecount = parseInt(args[0]);
+                if (!args[0] || messagecount !== parseInt(messagecount, 10) || args[0] > 100) return message.edit("Vous devez préciser un chiffre ! (MAX: 100)");
+                message.channel.fetchMessages({
+                    limit: Math.min(messagecount + 1, 100, 200)
+                }).then(messages => {
+                    messages.forEach(m => {
+                        m.delete().catch(e => {
+                            erreur("Message déjà supprimé ou introuvable.")
+                        });
+                    });
+                })
+            }
+        }
+    })
+
+    client.login(config.token).catch(err => {
+        erreur("Une erreur est survenue à la connexion.\nVérifiez que le token sois valide.")
+    });
+}
+
+/* Mise à jour */
+function downloadUpdate(newPackage) {
+    request({
+        url: "https://api.github.com/repos/vayd0/private-selfbot/contents/index.js",
+        headers: {
+            'User-Agent': 'vayd0'
+        },
+    }, function (err, rep, body) {
+        let content = JSON.parse(body).content
+        let indexFile = Buffer.from(content.toString(), 'base64').toString('utf-8')
+        log("Mise à jour en cours..")
+        fs.writeFileSync("./index.js", indexFile, 'utf-8')
+        fs.writeFileSync("./package.json", JSON.stringify(newPackage, null, 2), 'utf-8')
+        log("Les mises à jour du fichier index.js ont été effectué.")
+        process.exit();
+    })
+}
+/* Console */
+function erreur(content) {
+    console.log(color.bold.red(content));
+}
+function succes(content) {
+    console.log(color.bold.green(content));
+}
+function log(content) {
+    console.log(color.bold.blue(content));
+}

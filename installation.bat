@@ -1,0 +1,3 @@
+@echo off
+@echo Installation des modules...
+npm i
