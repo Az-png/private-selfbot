@@ -1,6 +1,6 @@
 {
   "name": "lft-selfbot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Private selfbot.",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.27.2",
+    "anyanime": "^1.2.21",
     "buffer-replace": "^1.0.0",
     "chalk": "^2.4.2",
     "discord.js-v11-stable": "^11.6.5",
+    "hastebin": "^0.2.1",
     "prompts": "^2.4.2",
+    "randomatic": "^3.1.1",
     "request": "^2.88.2",
     "text-table": "^0.2.0"
   }
