@@ -1,5 +1,5 @@
 @echo off
-title "Selfbot"
+title Selfbot
 node .
 pause
 
