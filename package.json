@@ -1,5 +1,5 @@
 {
-  "name": "automatique-selfbot",
+  "name": "lft-selfbot",
   "version": "1.0.1",
   "description": "Private selfbot.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
     "buffer-replace": "^1.0.0",
