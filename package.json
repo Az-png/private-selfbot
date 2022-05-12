@@ -1,6 +1,6 @@
 {
   "name": "lft-selfbot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Private selfbot.",
   "main": "index.js",
   "scripts": {
